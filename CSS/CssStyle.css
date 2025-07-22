@@ -1,3 +1,4 @@
+/* 初始化全局样式 */
 * {
     margin: 0;
     padding: 0;
@@ -8,61 +9,224 @@ li {
     list-style: none;
 }
 body {
+    min-width: 1180px;
+    max-width: 1708px;
     /* 这里是文字控制属性，还有文字颜色  */
     font-size: 16px;
+    background-color: #f4f4f4;
 }
+a {
+    color: #666;
+    text-decoration: none;
+}
+a::hover {
+    color: red;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+
+
+
+
+/* 头部导航栏 */
 .browser {
+    width: 100%;
+    height: 36px;
+    border-bottom: .5px solid rgba(0, 0, 0, .06);
+    background-color: #e3e4e5;
+    font: 12px / 1.5 PingFang SC, system-ui, -apple-system;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     min-width: 1180px;
     max-width: 1450px;
     height: 36px;
+    padding: 0 4px;
     margin: 0 auto;
-    border-bottom: .5px solid rgba(0, 0, 0, .06);
-    background-color: greenyellow;
+    line-height: 36px;
+    /* background-color: #e3e4; */
 }
-#head .w {
+.browser .top .topliLEFT {
+    display: flex;
+    padding: 0 10px;
+    justify-content: left;
+    align-items: center;
+    color: #333;
+}
+.browser .top .topliRIGHT {
+    padding: 0 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #333;
+}
+.browser .top .liONE {
+    margin: 0 10px;
+}
+.space {
+    line-height: 36px;
+    margin:0 .5px !important;
+    width: .5px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+
+
+
+/* 搜索框部分 */
+.head {
+    margin: auto;
+    padding: 0 54px;
     min-width: 1180px;
-    max-width: 1450px;
+    max-width: 1708px;
+    background-color: #fff;
+}
+.headcontent {
+    width: 100%;
+    padding: 16px;
     height: 134px;
     margin: 1px auto 0;
-    background: red;
+    background: #fff;
 }
+h1 {
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+}
+.headcontent h1 a img {
+    z-index: 2;
+    display: block;
+    width: 240px;
+    font-size: 0;
+}
+.search {
+    /* z-index: 1; */
+    height: 76px;
+    /* 调试使用颜色 */
+    /* background-color: pink; */
+    top: 0;
+}
+.searchInfomation {
+    bottom: 0%;
+    left: 50%;
+    margin-left: -190px;
+    border-radius: 8px;
+    width: 394px;
+    height: 44px;
+    border: 2px solid #ff0f23;
+    padding: 2px 128px 2px 19px;
+    background-color: #fff;
+    line-height: 36px;
+    box-sizing:border-box;
+}
+.searchButton {
+    border-radius: 6px;
+    right: 2px;
+    top: 2px;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ff0f23;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.hotword {
+    border-radius: 4px;
+    bottom: -10px;
+    left: 50%;
+    /* margin-left: -190px; */
+    transform: translate(-50%,0);
+    padding: 0 19px;
+    width: 700px;
+    height: 30px;
+    background-color: pink;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* 中间主题部分 */
 .middle {
-    display: flex;
-    justify-content: space-between;
-    background: aqua;
-    /* width: 65%; */
+    background: #fff;
     min-width: 1180px;
     max-width: 1450px;
-    height: 580px;
-    margin: 10px auto 40px;
+    height: 432px;
+    margin: 10px auto;
     /* 解决内边距塌陷问题 */
+}
+.middlediv {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 100%;
+    height: 432px;
+    padding: 16px;
     overflow: hidden;
 }
 .middle .middle1 {
     background-color : orange;
-    width: 24%;
-    height: 600px;
-    display: inline-block;
+    width: 248px !important;
+    height: 400px;
+    margin-right: 16px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .middle .middle2 {
     background-color : blanchedalmond;
-    width: 24%;
-    height: 600px;
-    display: inline-block;
+    width: auto;
+    flex: 1;
+    height: 400px;
+    margin-right: 16px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .middle .middle3 {
     background-color : gray;
-    width: 24%;
-    height: 600px;
-    display: inline-block;
-    /* margin: ; */
+    width: 248px !important;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
 }
-.middle .middle4 {
-    background-color : brown;
-    width: 24%;
-    height: 600px;
-    display: inline-block;
+.sinInImgDIV {
+    width: 248px;
+    height: 278px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    background-color: pink;
 }
+.sinInImg {
+    /* 登录部分标签 */
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+.sinInImgDIV img {
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
 .second {
     background-color: teal;
     min-width: 1180px;
