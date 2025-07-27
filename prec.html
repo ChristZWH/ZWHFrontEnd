@@ -7,53 +7,71 @@
    <link rel="stylesheet" href="./CSS/CssStyle.css">
 </head>
 <body>
-    <!--  最顶部-->
+    <!--  最顶部OK-->
     <div class="browser">
         <div class="top">
             <ul class="topliLEFT">
-                <li class="liONE">中国大陆版-陕西西安</li>
+                <li class="liONE relative"><a href="#">中国大陆版-陕西西安</a>
+                    <ul class="dropdown">
+                        <li><a href="#">中国大陆版</a></li>
+                        <li><a href="#">中国港澳版</a></li>
+                        <li><a href="#">中国台湾版</a></li>
+                        <li><a href="#">京东全球版</a></li>
+                    </ul>
+                </li>
                 <li class="liONE space"></li>
-                <li class="liONE">登录 注册</li>
+                <li class="liONE"><a href="#">登录 注册</a></li>
                 <li class="liONE space"></li>
-                <li class="liONE">切换至至尊版</li>
+                <li class="liONE"><a href="#">切换至至尊版</a></li>
             </ul>
             <ul class="topliRIGHT">
-                <li class="liONE">购物车</li>
-                <li class="liONE space"></li>
-                <li class="liONE">我的订单</li>
-                <li class="liONE space"></li>
-                <li class="liONE">企业采购</li>
-                <li class="liONE space"></li>
-                <li class="liONE">商家服务</li>
-                <li class="liONE space"></li>
-                <li class="liONE">网站导航</li>
-                <li class="liONE space"></li>
-                <li class="liONE">手机京东</li>
-                <li class="liONE space"></li>
-                <li class="liONE">网站无障碍</li>
+                <li class="liONE"><a href="#">购物车</a></li>
+                <li class="space"></li>
+                <li class="liONE"><a href="#">我的订单</a></li>
+                <li class="space"></li>
+                <li class="liONE"><a href="#">企业采购</a></li>
+                <li class="space"></li>
+                <li class="liONE"><a href="#">商家服务</a></li>
+                <li class="space"></li>
+                <li class="liONE"><a href="#">网站导航</a></li>
+                <li class="space"></li>
+                <li class="liONE"><a href="#">手机京东</a></li>
+                <li class="space"></li>
+                <li class="liONE"><a href="#">网站无障碍</a></li>
             </ul>
         </div>
     </div>
-    
-    
     
     <!-- 头部搜索框部分 -->
      <div class="head">
         <div class="headcontent relative">
             <!-- 京东logo -->
             <div>
-                <h1 class="absolute"><a href="https://www.jd.com/">
-                    <img src="./img/jingdongLOGO.png" alt="">
-                </a></h1>
+                <h1 class="absolute">
+                    <a href="#"><img src="./img/jingdongLOGO.png" alt=""></a>
+                </h1>
             </div>
+            <!-- 搜索框 -->
             <div class="search relative">
-                <div class="searchInfomation absolute">
-                    搜索中心
+                <div class="searchInfomation relative">
+                    <input type="text" class="search-input" value="铅笔" placeholder="请输入搜索内容">
                     <button class="searchButton absolute">搜索</button>
                 </div>
             </div>
+            <!-- 热搜词 -->
             <div class="hotword relative">
-                热搜词
+                <a href="#">iPhone 15</a>
+                <a href="#">空调</a>
+                <a href="#">显卡</a>
+                <a href="#">笔记本</a>
+                <a href="#">洗衣机</a>
+                <a href="#">电视</a>
+                <a href="#">冰箱</a>
+                <a href="#">显卡</a>
+                <a href="#">笔记本</a>
+                <a href="#">洗衣机</a>
+                <a href="#">电视</a>
+                <a href="#">冰箱</a>
             </div>
         </div>
      </div>
@@ -61,43 +79,359 @@
     
     
     
-    
-    
     <!-- 中间主题部分 -->
     <div class="middle relative">
-        <div class="middlediv absolute">
-            <div class="middle1"></div>
-            <div class="middle2"></div>
-            <div class="middle3">
-                <!-- 登陆部分设计 -->
-                 <div>
-                    <div class="sinInImgDIV">
-                        <a href="#" class="sinInImg">
-                            <img src="./img/loginIMG.png" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        
-                    </div>
-                 </div>
-
-                
+        <div class="middle1">
+            <div class="specificClassArea">
+                <ul>
+                    <li class="specificClass relative">
+                         家用电器
+                         <div class="floatArea absolute">这是拓展内容</div>
+                    </li>
+                    <li class="specificClass relative">
+                         手机 / 运营商 / 数码
+                        <div class="floatArea absolute">这是拓展内容2</div>
+                    </li>
+                    <li class="specificClass"> 电脑 / 办公 / 文具用品</li>
+                    <li class="specificClass"> 家居 / 家具 / 家装 / 厨具</li>
+                    <li class="specificClass"> 男装 / 女装 / 童装 / 内衣</li>
+                    <li class="specificClass"> 美妆 / 个护清洁 / 宠物</li>
+                    <li class="specificClass"> 女鞋 / 箱包 / 钟表 / 珠宝</li>
+                    <li class="specificClass"> 男鞋 / 运动 / 户外</li>
+                    <li class="specificClass"> 房产 / 汽车 / 汽车用品</li>
+                    <li class="specificClass"> 母婴 / 玩具乐器</li>
+                    <li class="specificClass"> 食品 / 酒类 / 生鲜 / 特产</li>
+                    <li class="specificClass"> 艺术 / 礼品鲜花 / 农牧园艺</li>
+                    <li class="specificClass"> 京东买药 / 计生情趣</li>
+                    <li class="specificClass"> 图书 / 文娱 / 教育 / 电子书</li>
+                    <li class="specificClass"> 机票 / 酒店 / 旅游 / 生活</li>
+                    <li class="specificClass"> 支付 / 白条 / 保险 / 企业金融</li>
+                    <li class="specificClass"> 安装 / 维修 / 清洗 / 二手</li>
+                    <li class="specificClass"> 元器件 / 原材料 / 五金机电</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播图部分 --> 
+        <div class="middle2">
+            <div class="wrapper">
+                <img src="./img/轮播图1.jpg" alt="">
+            </div>
+            <div class="middle2footer relative">
                 <div>
-                    其他信息
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
+                <div class="toggle">
+                    <button class="pre">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 登陆部分 -->
+        <div class="middle3">
+            <!-- 登陆部分设计 -->
+            <div class="sinInImgDIV">
+                <a href="#" class="sinInImg">
+                    <img src="./img/loginIMG.png" alt="">
+                </a>
+                <p>Hi, 欢迎来到京东</p>
+                <a href="#" class="login-btn">登录</a>
+                <div class="user-links">
+                    <a href="#">我的订单</a>
+                    <a href="#">我的优惠券</a>
+                    <a href="#">我的足迹</a>
+                </div>
+            </div>
+            <div style="text-align: center;font-size: 30px; margin-top: 45px;">
+                其他信息
             </div>
         </div>
     </div>
     
     
-    
-    
-    <div class="second"></div>
-    
-    <div class="third"></div>
-    
+    <!-- 商品展示区 -->
+    <div class="product-section">
+        <div class="section-header">
+            <h2 class="section-title">京东秒杀</h2>
+            <a href="#" class="more-link">更多秒杀</a>
+        </div>
+        <!-- 重复的产品展示区 -->
+        <div class="product-list">
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图1.jpg" alt="商品">
+                </div>
+                <div class="product-name">Go语言权威指南</div>
+                <div class="product-price">¥8999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图2.jpg" alt="商品">
+                </div>
+                <div class="product-name">iPadPro11英寸 iPadPro13英寸M2/M4芯片2022年/24年新款学生平板电脑 深空黑色11英寸【2022款】 128GB WIFI 标配【原装】</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图3.jpg" alt="商品">
+                </div>
+                <div class="product-name">联想拯救者Y7000P 2025补贴20% 16英寸电竞游戏笔记本电脑r Y9000P同款旗舰i9可选 2025款丨16核i7 16G 1T 满血5060 16英寸丨2.5K丨高刷屏｜京东快递 更快更好</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图4.jpg" alt="商品">
+                </div>
+                <div class="product-name">【国家3C安全认证丨可上飞机】120W超级快充自带线充电宝20000M毫安小巧便捷移动电源适用苹果华为 3C认证【顶配版20000M+进口升级电芯】 【全国当/次日达】已售200万+｜小巧便捷</div>
+                <div class="product-price">¥5699</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图5.jpg" alt="商品">
+                </div>
+                <div class="product-name">漫步者（EDIFIER）X5pro 真无线主动降噪蓝牙耳机金榜第1名新款入耳式排行前十情人节礼物男女 适用于苹果华为小米 月白</div>
+                <div class="product-price">¥4999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图1.jpg" alt="商品">
+                </div>
+                <div class="product-name">Go语言权威指南</div>
+                <div class="product-price">¥8999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图2.jpg" alt="商品">
+                </div>
+                <div class="product-name">iPadPro11英寸 iPadPro13英寸M2/M4芯片2022年/24年新款学生平板电脑 深空黑色11英寸【2022款】 128GB WIFI 标配【原装】</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图3.jpg" alt="商品">
+                </div>
+                <div class="product-name">联想拯救者Y7000P 2025补贴20% 16英寸电竞游戏笔记本电脑r Y9000P同款旗舰i9可选 2025款丨16核i7 16G 1T 满血5060 16英寸丨2.5K丨高刷屏｜京东快递 更快更好</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图4.jpg" alt="商品">
+                </div>
+                <div class="product-name">【国家3C安全认证丨可上飞机】120W超级快充自带线充电宝20000M毫安小巧便捷移动电源适用苹果华为 3C认证【顶配版20000M+进口升级电芯】 【全国当/次日达】已售200万+｜小巧便捷</div>
+                <div class="product-price">¥5699</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图5.jpg" alt="商品">
+                </div>
+                <div class="product-name">漫步者（EDIFIER）X5pro 真无线主动降噪蓝牙耳机金榜第1名新款入耳式排行前十情人节礼物男女 适用于苹果华为小米 月白</div>
+                <div class="product-price">¥4999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图1.jpg" alt="商品">
+                </div>
+                <div class="product-name">Go语言权威指南</div>
+                <div class="product-price">¥8999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图2.jpg" alt="商品">
+                </div>
+                <div class="product-name">iPadPro11英寸 iPadPro13英寸M2/M4芯片2022年/24年新款学生平板电脑 深空黑色11英寸【2022款】 128GB WIFI 标配【原装】</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图3.jpg" alt="商品">
+                </div>
+                <div class="product-name">联想拯救者Y7000P 2025补贴20% 16英寸电竞游戏笔记本电脑r Y9000P同款旗舰i9可选 2025款丨16核i7 16G 1T 满血5060 16英寸丨2.5K丨高刷屏｜京东快递 更快更好</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图4.jpg" alt="商品">
+                </div>
+                <div class="product-name">【国家3C安全认证丨可上飞机】120W超级快充自带线充电宝20000M毫安小巧便捷移动电源适用苹果华为 3C认证【顶配版20000M+进口升级电芯】 【全国当/次日达】已售200万+｜小巧便捷</div>
+                <div class="product-price">¥5699</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图5.jpg" alt="商品">
+                </div>
+                <div class="product-name">漫步者（EDIFIER）X5pro 真无线主动降噪蓝牙耳机金榜第1名新款入耳式排行前十情人节礼物男女 适用于苹果华为小米 月白</div>
+                <div class="product-price">¥4999</div>
+            </div>
+             <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图1.jpg" alt="商品">
+                </div>
+                <div class="product-name">Go语言权威指南</div>
+                <div class="product-price">¥8999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图2.jpg" alt="商品">
+                </div>
+                <div class="product-name">iPadPro11英寸 iPadPro13英寸M2/M4芯片2022年/24年新款学生平板电脑 深空黑色11英寸【2022款】 128GB WIFI 标配【原装】</div>
+                <div class="product-price">¥6999</div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="./img/产品图3.jpg" alt="商品">
+                </div>
+                <div class="product-name">联想拯救者Y7000P 2025补贴20% 16英寸电竞游戏笔记本电脑r Y9000P同款旗舰i9可选 2025款丨16核i7 16G 1T 满血5060 16英寸丨2.5K丨高刷屏｜京东快递 更快更好</div>
+                <div class="product-price">¥6999</div>
+            </div>
+        </div>
+    </div>
+    <!-- 服务保障 -->
+    <div class="service-bar">
+        <div class="container">
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-gem"></i></div>
+                    <div class="service-title">正品保障</div>
+                    <div class="service-desc">正品品质 放心选购</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-truck"></i></div>
+                    <div class="service-title">极速物流</div>
+                    <div class="service-desc">211限时达 次日达</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-undo"></i></div>
+                    <div class="service-title">售后无忧</div>
+                    <div class="service-desc">7天无理由退货</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-comments"></i></div>
+                    <div class="service-title">专属客服</div>
+                    <div class="service-desc">一对一贴心服务</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-gift"></i></div>
+                    <div class="service-title">天天低价</div>
+                    <div class="service-desc">30天价保 买贵退差</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 固定位置 -->
     <div class="fixPosition"></div>
-    <!-- 标签结束位置 -->
+    
+    
+    
+    
+    <script>
+        // 拓展悬浮内容
+        const middle1 = document.querySelector(".middle1")
+        middle1.addEventListener("mouseenter",function() {
+            middle1.classList.remove("show")
+        })
+        middle1.addEventListener("mouseleave",function() {
+            middle1.classList.add("show")
+        })
+        // const floatArea = document.querySelector(".specificClassArea li")
+        // floatArea.addEventListener("mouseenter",function(e) {
+            
+        // })
+        // 使用事件委托高效处理
+        const specificClassArea = document.querySelector('.specificClassArea');
+        specificClassArea.addEventListener('mouseover', function(e) {
+            if (e.target.closest('.specificClass')) {
+                const li = e.target.closest('.specificClass');
+                const floatArea = li.querySelector('.floatArea');
+                
+                // 隐藏所有浮层
+                document.querySelectorAll('.floatArea').forEach(el => {
+                    el.style.display = 'none';
+                });
+                
+                // 显示当前浮层
+                if (floatArea) {
+                    floatArea.style.display = 'block';
+                }
+            }
+        });
+
+        // 添加鼠标离开隐藏功能
+        specificClassArea.addEventListener('mouseout', function(e) {
+            if (!e.relatedTarget || !e.relatedTarget.closest('.specificClass')) {
+                document.querySelectorAll('.floatArea').forEach(el => {
+                    el.style.display = 'none';
+                });
+            }
+        });
+        
+        
+        //  实现搜索框的功能轮播效果
+        const searchInfo = [
+            {value:"铅笔"},
+            {value:"蓝牙鼠标"},
+            {value:"海飞丝洗发水"},
+            {value:"电冰箱"},
+            {value:"海尔空调"},
+        ]
+        const searchInput = document.querySelector(".search input")
+        let j = 0
+        setInterval(function(){
+            // searchInput.value = searchInfo[j].value
+            searchInput.value = searchInfo[j].value
+            j = (++j)%5
+        },2000)
+        
+        
+        
+        //  实现中心图片轮播效果
+        const Infomation = [
+            {url:"./img/轮播图1.jpg"},
+            {url:"./img/轮播图2.jpg"},
+            {url:"./img/轮播图3.jpg"},
+            {url:"./img/轮播图4.jpg"},
+            {url:"./img/轮播图5.jpg"}
+        ]
+        const middle2imgchange = document.querySelector(".middle .middle2 .wrapper img")
+        const dots = document.querySelectorAll(".middle2footer ul li")
+        let i = 1
+        // 点击左侧箭头切换图片
+        function changeImg(i) {
+            middle2imgchange.src = Infomation[i].url
+            dots.forEach(dots=>dots.classList.remove("active"))
+            dots[i].classList.add("active")
+        }
+        const next = document.querySelector(".middle2footer .next")
+        next.addEventListener("click",function(){
+            i++
+            i = i%Infomation.length
+            changeImg(i)
+        })
+        // 点击右侧箭头切换图片
+        const pre = document.querySelector(".middle2footer .pre")
+        pre.addEventListener("click",function(){
+            i--
+            i = i>=0 ? i : Infomation.length-1
+            changeImg(i)
+        })
+        let flag = setInterval(function(){
+            next.click()
+        },1000)
+        const middle2 = document.querySelector(".middle2")
+        middle2.addEventListener("mouseenter",function(){
+            clearInterval(flag)
+        })
+        middle2.addEventListener("mouseleave",function(){
+            clearInterval(flag)
+            flag = setInterval(function(){
+                next.click()
+            },1000)
+        })
+    </script>
 </body>
 </html>
