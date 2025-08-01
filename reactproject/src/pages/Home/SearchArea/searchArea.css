@@ -1,0 +1,85 @@
+/* 头部搜索框部分 */
+.head {
+  margin: auto;
+  padding: 0 54px;
+  min-width: 1180px;
+  max-width: 1708px;
+  background-color: #fff;
+}
+.headcontent {
+  width: 100%;
+  padding: 16px;
+  height: 134px;
+  margin: 1px auto 0;
+  background: #fff;
+}
+h1 {
+  top: 50%;
+  left: 50px;
+  transform: translate(0, -50%);
+}
+.headcontent h1 a img {
+  z-index: 2;
+  display: block;
+  width: 240px;
+  font-size: 0;
+}
+.search {
+  /* z-index: 1; */
+  height: 76px;
+  /* 调试使用颜色 */
+  /* background-color: pink; */
+  top: 0;
+}
+.searchInfomation {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  width: 394px;
+  height: 44px;
+  border: 2px solid #ff0f23;
+  padding: 2px 128px 2px 10px;
+  background-color: #fff;
+  line-height: 36px;
+  box-sizing:border-box;
+}
+.search-input {
+  flex: 1;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.searchButton {
+  border-radius: 6px;
+  right: 2px;
+  top: 2px;
+  width: 80px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #ff0f23;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.hotword {
+  border-radius: 4px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 0 19px;
+  width: 700px;
+  height: 30px;
+  /* background-color: pink; */
+  line-height: 30px;
+  font-size: 12px;
+}
+.head .headcontent .hotword a {
+  margin-right: 20px;
+  color: #333;
+}
+.head .headcontent .hotword a:hover {
+  color: #e33333;
+}

@@ -1,0 +1,46 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+body {
+  min-width: 1180px;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #e33333;
+}
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}

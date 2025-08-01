@@ -400,12 +400,12 @@
         const middle2imgchange = document.querySelector(".middle .middle2 .wrapper img")
         const dots = document.querySelectorAll(".middle2footer ul li")
         let i = 1
-        // 点击左侧箭头切换图片
         function changeImg(i) {
             middle2imgchange.src = Infomation[i].url
             dots.forEach(dots=>dots.classList.remove("active"))
             dots[i].classList.add("active")
         }
+        // 点击左侧箭头切换图片
         const next = document.querySelector(".middle2footer .next")
         next.addEventListener("click",function(){
             i++

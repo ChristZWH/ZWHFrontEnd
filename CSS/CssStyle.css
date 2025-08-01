@@ -444,7 +444,7 @@ h1 {
   color: #e33333;
   padding-left: 15px;
 }
-.section-title:before {
+/* .section-title:before {
   position: absolute;
   content: '';
   left: 0;
@@ -454,7 +454,7 @@ h1 {
   height: 20px;
   background: #e33333;
   border-radius: 2px;
-}
+} */
 .more-link {
   font-size: 14px;
   color: #999;

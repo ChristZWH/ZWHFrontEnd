@@ -1,0 +1,76 @@
+/* 最顶部OK */
+.browser {
+  width: 100%;
+  height: 36px;
+  border-bottom: .5px solid rgba(0, 0, 0, .06);
+  background-color: #e3e4e5;
+  font: 12px / 1.5 PingFang SC, system-ui, -apple-system;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 1180px;
+  max-width: 1450px;
+  height: 36px;
+  padding: 0 4px;
+  margin: 0 auto;
+  line-height: 36px;
+  /* background-color: #e3e4; */
+}
+.topliLEFT ,
+.topliRIGHT {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  color: #333;
+}
+.topliRIGHT {
+  justify-content: flex-end;
+}
+.topliLEFT li:hover,
+.topliRIGHT li:hover {
+  color: #e33333;
+}
+.browser .top .liONE {
+  margin: 0 10px;
+}
+/* 添加下拉菜单样式 */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 120px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+  display: none;
+  padding:  0;
+}
+.dropdown li {
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  text-align: center;
+}
+.dropdown li a {
+  display: block;
+  color: #666;
+  transition: all 0.3s;
+}
+.dropdown li a:hover {
+  color: #e33333;
+  background: #f9f9f9;
+}
+.liONE:hover .dropdown {
+  display: block;
+}
+.space {
+  line-height: 36px;
+  margin:0 .5px !important;
+  width: .5px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, .2);
+}

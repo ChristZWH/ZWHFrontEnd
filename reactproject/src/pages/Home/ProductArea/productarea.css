@@ -1,0 +1,90 @@
+/* 商品展示区 */
+.product-section {
+  min-width: 1180px;
+  max-width: 1450px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px auto 0;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.section-title {
+  /* 这里有bug  为什么我的悬浮窗不能覆盖我的京东秒杀 */
+  /* position: relative; */
+  /* z-index: 0; */
+  font-size: 20px;
+  font-weight: bold;
+  color: #e33333;
+  padding-left: 15px;
+}
+/* .section-title:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: #e33333;
+  border-radius: 2px;
+} */
+.more-link {
+  font-size: 14px;
+  color: #999;
+  transition: all 0.3s;
+}
+.more-link:hover {
+  color: #e33333;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-item {
+  width: 230px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 4px;
+}
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.product-img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+.product-item:hover .product-img img {
+  transform: scale(1.05);
+}
+.product-name {
+  height: 40px;
+  margin: 10px 0;
+  font-size: 14px;
+  overflow: hidden;
+}
+.product-price {
+  color: #e33333;
+  font-size: 18px;
+  font-weight: bold;
+}
