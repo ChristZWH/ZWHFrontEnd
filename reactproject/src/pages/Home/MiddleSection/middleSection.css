@@ -39,7 +39,7 @@
 }
 
 .floatArea {
-  display: none;
+  display: block;
   left: 100%;
   top: -15%;
   width: 800px;

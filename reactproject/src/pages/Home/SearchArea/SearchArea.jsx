@@ -11,10 +11,10 @@ function SearchArea() {
   ], [])
   // 获取输入信息
   const searchInputRef = useRef(null)
-  const handleOnChange = (inputContent) => {
+  const handleOnChange = () => {
     // 目前不知道如何处理用户输入信息，暂时打印一下用户信息
+    setInput(searchInputRef.current.value)
     console.log(inputInfo)
-    setInput(inputContent)
   }
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function SearchArea() {
         clearInterval(intervalId)
       }
     }
-  }, [searchInfo]) // 现在依赖是稳定的
+  }, [searchInfo])
 
   return (
     // 头部搜索框部分
