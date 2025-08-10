@@ -1,12 +1,12 @@
-import Home from "./pages/Home/Home"
-// import Login fron './pages/Login/Login'
+import router from "./router/router"
+import {RouterProvider} from "react-router-dom"
 import "./index.css"
 
 function App() {
   return (
     <div className="App">
-      <Home></Home>
-      {/* <Login></Login> */}
+      {/* 路由绑定 */}
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

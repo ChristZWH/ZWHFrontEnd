@@ -1,40 +1,41 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './searchArea.css'
+const searchInfo = [
+  { id: 1, value: "铅笔" },
+  { id: 2, value: "蓝牙鼠标" },
+  { id: 3, value: "海飞丝洗发水" },
+  { id: 4, value: "电冰箱" },
+  { id: 5, value: "海尔空调" },
+]
 function SearchArea() {
-  const [inputInfo, setInput] = useState("")
-  const searchInfo = useMemo(() => [
-    { value: "铅笔" },
-    { value: "蓝牙鼠标" },
-    { value: "海飞丝洗发水" },
-    { value: "电冰箱" },
-    { value: "海尔空调" },
-  ], [])
-  // 获取输入信息
-  const searchInputRef = useRef(null)
-  const handleOnChange = () => {
-    // 目前不知道如何处理用户输入信息，暂时打印一下用户信息
-    setInput(searchInputRef.current.value)
-    console.log(inputInfo)
-  }
-
+  const hotWord = [
+    { id: 1, content: "iPhone 15" },
+    { id: 2, content: "空调" },
+    { id: 3, content: "显卡" },
+    { id: 4, content: "笔记本" },
+    { id: 5, content: "洗衣机" },
+    { id: 6, content: "电视" },
+    { id: 7, content: "冰箱" },
+    { id: 8, content: "显卡" },
+    { id: 9, content: "笔记本" },
+    { id: 10, content: "洗衣机" },
+    { id: 11, content: "电视" },
+    { id: 12, content: "冰箱" },
+  ]
+  const [index, setIndex] = useState(0)
+  let intervalId = useRef(0)
+  const [inputInfo, setInput] = useState("铅笔")
   useEffect(() => {
-    let intervalId = null
-    const temp = searchInputRef.current
-    if (temp) {
-      let j = 0
-      intervalId = setInterval(function () {
-        if (temp) {
-          temp.value = searchInfo[j].value
-          j = (++j) % searchInfo.length
-        }
-      }, 2000)
-    }
+    intervalId.current = setInterval(() => {
+      setIndex((index + 1) >= searchInfo.length ? 0 : (index + 1))
+    }, 1000);
+    setInput(searchInfo[index].value)
     return () => {
-      if (intervalId) {
-        clearInterval(intervalId)
+      if (intervalId.current) {
+        clearInterval(intervalId.current);
       }
-    }
-  }, [searchInfo])
+    };
+  }, [index])
 
   return (
     // 头部搜索框部分
@@ -51,24 +52,13 @@ function SearchArea() {
         {/* 搜索框 */}
         <div className="search relative">
           <div className="searchInfomation relative">
-            <input type="text" className="search-input" value="铅笔" placeholder="请输入搜索内容" ref={searchInputRef} onChange={handleOnChange} />
+            <input type="text" className="search-input" placeholder={inputInfo} />
             <button className="searchButton absolute">搜索</button>
           </div>
         </div>
         {/* 热搜词 */}
         <div className="hotword relative">
-          <a href="/">iPhone 15</a>
-          <a href="/">空调</a>
-          <a href="/">显卡</a>
-          <a href="/">笔记本</a>
-          <a href="/">洗衣机</a>
-          <a href="/">电视</a>
-          <a href="/">冰箱</a>
-          <a href="/">显卡</a>
-          <a href="/">笔记本</a>
-          <a href="/">洗衣机</a>
-          <a href="/">电视</a>
-          <a href="/">冰箱</a>
+          {hotWord.map((item) => <a key={item.id} href="/">{item.content}</a>)}
         </div>
       </div>
     </div>
